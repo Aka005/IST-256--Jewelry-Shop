@@ -16,8 +16,12 @@ Features
 * Database: MongoDB
 * Version Control: Git, GitHub
 
+
 # Installation / Running the Project
+
 How someone else can run it locally:
+
+```bash
 # Clone the repository
 git clone https://github.com/Aka005/IST-256--Jewelry-Shop.git
 
@@ -31,7 +35,6 @@ npm install
 npm start
 
 # Open your browser at http://localhost:3000
-Usage
 
 # How to use it:
 Browse products, click to view details, add items to your cart, and see updates in real time.
