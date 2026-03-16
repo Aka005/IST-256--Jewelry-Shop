@@ -35,7 +35,7 @@ npm install
 npm start
 
 # Open your browser at http://localhost:3000
-```bash
+```
 
 # How to use it:
 Browse products, click to view details, add items to your cart, and see updates in real time.
