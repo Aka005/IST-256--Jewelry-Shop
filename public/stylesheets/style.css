@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.selected {
+  border: 2px solid green; /* Green border to indicate selection */
+  box-sizing: border-box; /* Ensures border doesn't affect image size */
+}
+

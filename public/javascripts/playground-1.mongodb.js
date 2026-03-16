@@ -1,0 +1,123 @@
+// File: createJewelryCollection.js
+
+// Select the database to use
+use('newJewelryDatabase');
+
+// Create the Jewelry collection with initial documents
+db.getCollection('jewelry').insertMany([
+    {
+        "idx": 0,
+        "name": "Cartier Love Bracelet",
+        "type": "Bracelet",
+        "metal": "18k Yellow Gold",
+        "cost": "$6,900",
+        "image": "images/CartierLoveBracelet.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 1,
+        "name": "Tiffany & Co. Soleste Ring",
+        "type": "Ring",
+        "metal": "Platinum",
+        "cost": "$12,000",
+        "image": "images/Tiffany&CoSolesteRing.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 2,
+        "name": "Van Cleef & Arpels Alhambra Necklace",
+        "type": "Necklace",
+        "metal": "18k Rose Gold",
+        "cost": "$13,000",
+        "image": "images/VanCleef&ArpelsAlhambraNecklace.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 3,
+        "name": "Harry Winston Diamond Cluster Earrings",
+        "type": "Earrings",
+        "metal": "Platinum",
+        "cost": "$22,500",
+        "image": "images/HarryWinstonDiamondClusterEarrings.webp",
+        "inCart": false
+    },
+    {
+        "idx": 4,
+        "name": "Bvlgari Serpenti Bracelet",
+        "type": "Bracelet",
+        "metal": "18k White Gold",
+        "cost": "$14,500",
+        "image": "images/BvlgariSerpentiBracelet.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 5,
+        "name": "Graff Spiral Diamond Necklace",
+        "type": "Necklace",
+        "metal": "18k White Gold",
+        "cost": "$47,000",
+        "image": "images/GraffSpiralDiamondNecklace.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 6,
+        "name": "Chanel Camélia Ring",
+        "type": "Ring",
+        "metal": "18k Pink Gold",
+        "cost": "$9,800",
+        "image": "images/ChanelCaméliaRing.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 7,
+        "name": "Mikimoto Pearl Drop Earrings",
+        "type": "Earrings",
+        "metal": "18k Yellow Gold",
+        "cost": "$5,400",
+        "image": "images/MikimotoPearlDropEarrings.jpg",
+        "inCart": false
+    },
+    {
+        "idx": 8,
+        "name": "Piaget Possession Bangle",
+        "type": "Bangle",
+        "metal": "18k Rose Gold",
+        "cost": "$9,500",
+        "image": "images/PiagetPossessionBangle.webp",
+        "inCart": false
+    },
+    {
+        "idx": 9,
+        "name": "David Yurman Cable Spira Necklace",
+        "type": "Necklace",
+        "metal": "18k Yellow Gold",
+        "cost": "$15,000",
+        "image": "images/DavidYurmanCableSpiraNecklace.jpg",
+        "inCart": false
+    }
+    // ... Other items omitted for brevity
+]);
+
+// File: findSalesOnApril4th.js
+
+// Select the database to use
+use('newJewelryDatabase');
+
+// Find and count sales on April 4th, 2014
+const salesOnApril4th = db.getCollection('sales').find({
+    date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') }
+}).count();
+
+// Print the result to the console
+console.log(`${salesOnApril4th} sales occurred in 2014.`);
+
+// File: aggregateSales2014.js
+
+// Select the database to use
+use('newJewelryDatabase');
+
+// Aggregate sales data for 2014
+db.getCollection('sales').aggregate([
+    { $match: { date: { $gte: new Date('2014-01-01'), $lt: new Date('2015-01-01') } } },
+    { $group: { _id: '$item', totalSaleAmount: { $sum: { $multiply: ['$price', '$quantity'] } } } }
+]);
