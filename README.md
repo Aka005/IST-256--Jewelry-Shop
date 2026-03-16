@@ -38,4 +38,7 @@ npm start
 ```
 
 # How to use it:
-Browse products, click to view details, add items to your cart, and see updates in real time.
+1. Browse products
+2. Click to view details
+3. Add items to your cart
+4. See updates in real time.
