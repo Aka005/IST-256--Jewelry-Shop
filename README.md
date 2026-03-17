@@ -19,7 +19,7 @@ Features
 
 # How To Run
 
-How someone else can run it locally:
+How to run it locally:
 
 ```bash
 # Clone the repository
