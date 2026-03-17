@@ -17,7 +17,7 @@ Features
 * Version Control: Git, GitHub
 
 
-# Installation / Running the Project
+# How To Run
 
 How someone else can run it locally:
 
@@ -44,6 +44,7 @@ npm start
 4. See updates in real time.
 
 # Project Structure
+```bash
 JEWELRY/
 ├── bin/                  ← server startup configuration
 ├── node_modules/         ← installed npm packages
@@ -54,4 +55,6 @@ JEWELRY/
 ├── package.json          ← project dependencies and scripts
 ├── package-lock.json     ← dependency lock file
 └── README.md             ← project documentation
+```
 
+Built by Emily Jao · IST 256 Web Development Project · Pennsylvania State University
