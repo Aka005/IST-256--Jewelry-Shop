@@ -57,4 +57,5 @@ JEWELRY/
 └── README.md             ← project documentation
 ```
 
+
 Built by Emily Jao · IST 256 Web Development Project · Pennsylvania State University
