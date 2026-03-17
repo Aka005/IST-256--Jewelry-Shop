@@ -1,3 +1,4 @@
+# Jewelry Shop
 # Overview
 This is a web application for a jewelry shop built as part of my full-stack class. Users can browse products, view details, and manage a shopping cart. The project demonstrates full-stack development skills, including front-end design and back-end functionality.
 Features
