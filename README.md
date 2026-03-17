@@ -42,3 +42,16 @@ npm start
 2. Click to view details
 3. Add items to your cart
 4. See updates in real time.
+
+# Project Structure
+JEWELRY/
+├── bin/                  ← server startup configuration
+├── node_modules/         ← installed npm packages
+├── public/               ← static assets (CSS, images, client-side JS)
+├── routes/               ← Express route handlers
+├── views/                ← application templates (UI pages)
+├── app.js                ← main Express server file
+├── package.json          ← project dependencies and scripts
+├── package-lock.json     ← dependency lock file
+└── README.md             ← project documentation
+
