@@ -2,7 +2,7 @@
 This is a web application for a jewelry shop built as part of my full-stack class. Users can browse products, view details, and manage a shopping cart. The project demonstrates full-stack development skills, including front-end design and back-end functionality.
 Features
 
-# What the Website Can Do:
+# What the Website Can Do
 * Browse a catalog of jewelry items
 * View item details (name, category, price, description)
 * Add items to a shopping cart
@@ -37,7 +37,7 @@ npm start
 # Open your browser at http://localhost:3000
 ```
 
-# How to use it:
+# How To Use It
 1. Browse products
 2. Click to view details
 3. Add items to your cart
